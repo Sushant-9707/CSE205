@@ -1,5 +1,4 @@
 //find missing element
-
 #include <iostream>
 using namespace std;
 
