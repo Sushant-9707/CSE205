@@ -3,7 +3,7 @@
 using namespace std;
 
 void volume(int l, int h, int b){
-    cout << "Volume is : " << b*h*l << endl;
+    cout << "Volume is :" << b*h*l << endl;
 }
 
 int main(){
@@ -15,5 +15,5 @@ int main(){
     cout << "Enter the breadth of cuboid: ";
     cin >> b;
 
-    volume(l,h,b);
+    volume()
 }
