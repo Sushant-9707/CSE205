@@ -3,8 +3,14 @@ using namespace std;
 
 int main() {
 
-    int arr[] = {5, 3, 4, 1, 2};
-    int n = 5;
+    int n;
+    cout << "Number of elements: ";
+    cin >> n;
+    int arr[n];
+    cout << "Enter the elements below..." << endl;
+    for(int i = 0; i < n; i++){
+        cin >> arr[i];
+    }
 
     for (int i = 1; i < n; i++) {
 
