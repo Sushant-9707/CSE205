@@ -9,6 +9,51 @@ class node{
     node* next;
 };
 
+void printList(node* head){
+    node* temp = head;
+    while(temp != NULL){
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+    cout << endl;
+}
+
+void insertAtHead(node** head, int newData){
+    node* newNode = new node();
+    newNode->data = newData;
+    newNode->next = *head;
+    *head = newNode;
+}
+
+void insertAtTail(node** head, int newData){
+    node* newNode = new node();
+    newNode->data = newData;
+    newNode->next = NULL;
+
+    if(*head == NULL){
+        *head = newNode;
+        return;
+    }
+
+    node* temp = *head;
+    while(temp->next != NULL){
+        temp = temp->next;
+    }
+    temp->next = newNode;
+}
+
+void searchbyvalue(node* head, int value){
+    node* temp = head;
+    while(temp != NULL){
+        if(temp->data == value){
+            cout << "Value " << value << " found in the list." << endl;
+            return;
+        }
+        temp = temp->next;
+    }
+    cout << "Value " << value << " not found in the list." << endl;
+}
+
 int main(){
     node n1;
     node n2;
