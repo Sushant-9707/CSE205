@@ -56,4 +56,3 @@ int main(){
     cout << "Top element after pop is: " << s.peek() << endl;
     return 0;
 }
-
